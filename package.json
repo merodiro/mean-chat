@@ -8,28 +8,31 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "private": true,
   "dependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
+    "@angular/core": "^11.0.5",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
-    "express": "^4.15.3",
-    "mongoose": "^4.10.4",
-    "morgan": "^1.8.2",
+    "express": "^4.16.0",
+    "mongoose": "^5.13.9",
+    "morgan": "^1.9.1",
     "rxjs": "^5.1.0",
-    "serve-favicon": "^2.4.3",
-    "socket.io-client": "^2.0.2",
+    "serve-favicon": "^2.4.5",
+    "socket.io-client": "^2.4.0",
     "socketio": "^1.0.0",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.4",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@angular/cli": "1.0.5",
@@ -49,5 +52,6 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0"
-  }
+  },
+  "snyk": true
 }
