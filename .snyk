@@ -1,0 +1,35 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - express > finalhandler > debug:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socketio > express > debug:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socketio > express > finalhandler > debug:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socketio > express > send > debug:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socketio > express > serve-static > send > debug:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socket.io-client > debug:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socket.io-client > engine.io-client > debug:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socket.io-client > socket.io-parser > debug:
+        patched: '2022-01-13T13:52:08.224Z'
+  SNYK-JS-LODASH-567746:
+    - mongoose > async > lodash:
+        patched: '2022-01-13T13:52:08.224Z'
+  'npm:mime:20170907':
+    - socketio > express > send > mime:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socketio > express > serve-static > send > mime:
+        patched: '2022-01-13T13:52:08.224Z'
+  'npm:ws:20160920':
+    - socketio > socket.io > engine.io > ws:
+        patched: '2022-01-13T13:52:08.224Z'
+    - socketio > socket.io > socket.io-client > engine.io-client > ws:
+        patched: '2022-01-13T13:52:08.224Z'
